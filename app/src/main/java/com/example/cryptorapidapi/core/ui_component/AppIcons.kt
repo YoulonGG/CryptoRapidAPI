@@ -14,4 +14,5 @@ object AppIcons {
     val icCoinDesk = R.drawable.coin_desk
     val icCryptoDaily = R.drawable.daily_crypto
     val icBSCNews = R.drawable.news
+    val icNoImageFound = R.drawable.not_found_error
 }

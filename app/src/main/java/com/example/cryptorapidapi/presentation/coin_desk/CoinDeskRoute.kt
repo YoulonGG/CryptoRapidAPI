@@ -18,7 +18,7 @@ fun CoinDeskRoute() {
     CoinDeskScreen(
         coinData = viewModel.coinDeskData.collectAsStateWithLifecycle().value,
         uiState = viewModel.uiState.collectAsStateWithLifecycle().value,
-        action = viewModel::onAction
+        onAction = viewModel::onAction
     )
 }
 

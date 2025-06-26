@@ -80,5 +80,9 @@ dependencies {
     implementation(libs.okhttp)
     implementation(libs.logging.interceptor)
 
+    // Loading Image
+    implementation(libs.coil.compose)
+
+
 
 }

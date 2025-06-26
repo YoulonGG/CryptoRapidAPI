@@ -14,6 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import com.example.cryptorapidapi.data.dto.response.CoinDeskData
+import com.example.cryptorapidapi.presentation.coin_desk.ui_components.CoinDeskCard
 
 /**
  * @Author: John Youlong.
@@ -58,9 +59,9 @@ fun CoinDeskScreen(
                             .padding(20.dp),
                     ) {
                         coinData?.forEach {
-                            Text(
-                                text = it?.title ?: "Unknown Title",
-                                modifier = Modifier.padding(bottom = 20.dp)
+                            CoinDeskCard(
+                                items = it,
+                                onItemClick = {}
                             )
                         }
                     }
