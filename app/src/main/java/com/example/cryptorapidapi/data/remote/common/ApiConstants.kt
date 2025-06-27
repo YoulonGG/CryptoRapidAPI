@@ -9,5 +9,6 @@ package com.example.cryptorapidapi.data.remote.common
 object ApiConstants {
 
     const val GET_COIN_DESK = "v1/coindesk"
+    const val GET_BSC_NEWS = "v1/bsc"
 
 }

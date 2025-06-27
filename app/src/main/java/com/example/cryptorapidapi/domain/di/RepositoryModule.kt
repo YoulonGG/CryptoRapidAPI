@@ -1,6 +1,8 @@
 package com.example.cryptorapidapi.domain.di
 
+import com.example.cryptorapidapi.data.remote.repositoryImpl.BSCNewsRepositoryImpl
 import com.example.cryptorapidapi.data.remote.repositoryImpl.CoinDeskRepositoryImpl
+import com.example.cryptorapidapi.domain.repositories.BSCNewsRepository
 import com.example.cryptorapidapi.domain.repositories.CoinDeskRepository
 import dagger.Binds
 import dagger.Module
@@ -22,8 +24,14 @@ RepositoryModule {
 
     @Binds
     @Singleton
-    fun bindAuthRepository(
+    fun bindCoinDeskRepository(
         coinDesk: CoinDeskRepositoryImpl
     ): CoinDeskRepository
+
+    @Binds
+    @Singleton
+    fun bindBSCNewsRepository(
+        bcsNews: BSCNewsRepositoryImpl
+    ): BSCNewsRepository
 
 }
